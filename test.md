@@ -1,5 +1,17 @@
 # Testing the Markdown copilot
 
+**copilot** create table of contents
+
+## Heading examples
+### H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+
+## Table example
 <style>
     table {
         width: 100%;
@@ -144,4 +156,93 @@ erDiagram
     CUSTOMER ||--o{ ORDER : places
     ORDER ||--|{ LINE-ITEM : contains
     PRODUCT ||--|{ LINE-ITEM : includes
+```
+
+## Markdown features examples
+
+### Unordered List examples
+
+- Item 1
+  - Item 2
+- Item 3
+  - Item 4
+  - Item 5
+    - Item 6
+
+### Ordered List examples
+
+1. Item 1
+    1. Item 2
+2. Item 3
+    1. Item 4
+    2. Item 5
+        1. Item 6
+
+### Code examples
+
+#### JSON
+
+```json
+{
+    "name": "John",
+    "age": 30,
+    "city": "New York",
+    "hasChildren": false,
+    "titles": [
+        "engineer",
+        "programmer",
+        "designer"
+    ],
+    "address": {
+        "street": "123 Main St",
+        "city": "New York",
+        "state": "NY",
+    }
+}
+```
+
+#### YAML
+
+```yaml
+name: John
+age: 30
+city: New York
+hasChildren: false
+titles:
+  - engineer
+  - programmer
+  - designer
+address:
+  street: 123 Main St
+  city: New York
+  state: NY
+```
+
+#### JAVA BPMN
+
+```java
+public class MyProcess {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+        System.exit(0);
+    }
+}
+```
+
+### HTML examples
+
+```html
+<html>
+    <body>
+        <h1>Hello World</h1>
+        <p>This is my first paragraph.</p>
+    </body>
+</html>
+```
+
+### Formatted text
+
+```text
+Hello World
+This is my first paragraph.
 ```
