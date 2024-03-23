@@ -11,15 +11,8 @@
 
 ## Table example
 <html>
-    <!-- <head>
-        <style>
-            table {
-                width: 100%;
-            }
-        </style>
-    </head> -->
-    <body style="width: 100%;" >
-        <table>
+    <body  >
+        <table style="width: 100%;">
             <thead>
                 <tr>
                     <th>Layer 1</th>
