@@ -8,6 +8,7 @@
 - [Mermaid JS gantt](#mermaid-js-gantt)
 - [Mermaid JS sequence diagram](#mermaid-js-sequence-diagram)
 - [Mermaid JS flowchart](#mermaid-js-flowchart)
+- [Basic flowchart](#basic-flowchart)
 - [Mermaid JS user story](#mermaid-js-user-story)
 - [Mermaid JS class diagram](#mermaid-js-class-diagram)
 - [Mermaid JS entity relationship diagram](#mermaid-js-entity-relationship-diagram)
