@@ -12,13 +12,14 @@
 
 
 ## Table example
-
-<table>
+<head>
     <style>
         table {
             width: 100%;
         }
     </style>
+</head>
+<table>
     <thead>
         <tr>
             <th>Layer 1</th>
