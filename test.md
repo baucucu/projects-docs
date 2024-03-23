@@ -108,14 +108,35 @@ gantt
 
 ```mermaid
 sequenceDiagram
-    Alice ->> Bob: Hello Bob, how are you?
-    Bob-->>John: How about you John?
-    Bob--x Alice: I am good thanks!
-    Bob-x John: I am good thanks!
-    Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+    participant web as Web Browser
+    participant blog as Blog Service
+    participant account as Account Service
+    participant mail as Mail Service
+    participant db as Storage
 
-    Bob-->Alice: Checking with John...
-    Alice->John: Yes... John, how are you?
+    Note over web,db: The user must be logged in to submit blog posts
+    web->>+account: Logs in using credentials
+    account->>db: Query stored accounts
+    db->>account: Respond with query result
+
+    alt Credentials not found
+        account->>web: Invalid credentials
+    else Credentials found
+        account->>-web: Successfully logged in
+
+        Note over web,db: When the user is authenticated, they can now submit new posts
+        web->>+blog: Submit new post
+        blog->>db: Store post data
+
+        par Notifications
+            blog--)mail: Send mail to blog subscribers
+            blog--)db: Store in-site notifications
+        and Response
+            blog-->>-web: Successfully posted
+        end
+    end
+
+
 
 ```
 
@@ -133,6 +154,35 @@ flowchart TB
     subgraph three
     c1-->c2
     end
+```
+
+## Basic flowchart
+
+```mermaid
+graph LR
+    A[Square Rect] -- Link text --> B((Circle))
+    A --> C(Round Rect)
+    B --> D{Rhombus}
+    C --> D
+
+```
+
+## Mermaid timeline example
+
+```mermaid
+timeline
+        title England's History Timeline
+        section Stone Age
+          7600 BC : Britain's oldest known house was built in Orkney, Scotland
+          6000 BC : Sea levels rise and Britain becomes an island.<br> The people who live here are hunter-gatherers.
+        section Bronze Age
+          2300 BC : People arrive from Europe and settle in Britain. <br>They bring farming and metalworking.
+                  : New styles of pottery and ways of burying the dead appear.
+          2200 BC : The last major building works are completed at Stonehenge.<br> People now bury their dead in stone circles.
+                  : The first metal objects are made in Britain.Some other nice things happen. it is a good time to be alive.
+
+
+
 ```
 
 ## Mermaid JS user story
