@@ -1,5 +1,17 @@
 # Testing the Markdown copilot
 
+## Table of contents
+
+- [Heading examples](#heading-examples)
+- [Table example](#table-example)
+- [Mermaid JS gantt](#mermaid-js-gantt)
+- [Mermaid JS sequence diagram](#mermaid-js-sequence-diagram)
+- [Mermaid JS flowchart](#mermaid-js-flowchart)
+- [Mermaid JS user story](#mermaid-js-user-story)
+- [Mermaid JS class diagram](#mermaid-js-class-diagram)
+- [Mermaid JS entity relationship diagram](#mermaid-js-entity-relationship-diagram)
+- [Markdown features examples](#markdown-features-examples)
+
 ## Heading examples
 ### H1
 ## H2
