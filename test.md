@@ -13,14 +13,14 @@
 
 ## Table example
 <html>
-    <head>
+    <!-- <head>
         <style>
             table {
                 width: 100%;
             }
         </style>
-    </head>
-    <body>
+    </head> -->
+    <body style="width: 100%;" >
         <table>
             <thead>
                 <tr>
