@@ -1,7 +1,5 @@
 # Testing the Markdown copilot
 
-**copilot** create table of contents
-
 ## Heading examples
 ### H1
 ## H2
