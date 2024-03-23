@@ -3,6 +3,7 @@
 ## Table of contents
 
 - [Heading examples](#heading-examples)
+- [Tasks](#tasks)
 - [Table example](#table-example)
 - [Mermaid JS gantt](#mermaid-js-gantt)
 - [Mermaid JS sequence diagram](#mermaid-js-sequence-diagram)
