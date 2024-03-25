@@ -158,17 +158,14 @@ flowchart TB
 
 ```mermaid
 graph LR
-    swimlane A
     A[Activity] -- Link text --> B((Circle))
     A --> C[Activity]
-    end
     B --> D{Decision}
     C --> D --> E
     C --> E{Decision}
     E --> F[Activity]
     E --> G[Activity]
     G --> F
-
 ```
 
 ## Mermaid timeline example
