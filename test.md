@@ -136,9 +136,6 @@ sequenceDiagram
             blog-->>-web: Successfully posted
         end
     end
-
-
-
 ```
 
 ## Mermaid JS flowchart
@@ -161,10 +158,16 @@ flowchart TB
 
 ```mermaid
 graph LR
-    A[Square Rect] -- Link text --> B((Circle))
-    A --> C(Round Rect)
-    B --> D{Rhombus}
-    C --> D
+    swimlane A
+    A[Activity] -- Link text --> B((Circle))
+    A --> C[Activity]
+    end
+    B --> D{Decision}
+    C --> D --> E
+    C --> E{Decision}
+    E --> F[Activity]
+    E --> G[Activity]
+    G --> F
 
 ```
 
